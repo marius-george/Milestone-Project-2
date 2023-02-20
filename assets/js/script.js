@@ -29,3 +29,9 @@ async function getQuote() {
 mainButton.addEventListener('click', newQuote);
 
 getQuote();
+
+function copyText() {
+    const text = document.getElementById("main").textContent;
+    navigator.clipboard.writeText(text);
+    alert("Copied the text: " + text);
+  }

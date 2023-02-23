@@ -15,6 +15,8 @@ body {
 
 }
 
+
+
 .main-div {
     width: auto;
     max-width: 1000px;
@@ -23,6 +25,8 @@ body {
     background-color: rgba(244, 244, 244, 0.5);
     box-shadow: 0 12px 12px 12px rgba(0, 0, 0, 0.3);
   }
+
+
 
 .main-text {
     font-size: 2.5rem;
@@ -43,7 +47,7 @@ body {
 
 button {
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     height: 2.4rem;
     border: none;
     border-radius: 12px;
@@ -75,3 +79,12 @@ button:active {
         font-size: 2.2     rem;
     }
 }
+
+
+.fa-twitter {
+    font-size: 1.5rem; 
+  }
+
+  .twitter-button:hover {
+    color: #1681d3;
+  }

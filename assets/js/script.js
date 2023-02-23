@@ -2,6 +2,7 @@ const mainDiv  = document.getElementById('main-div');
 const mainText  = document.getElementById('main');
 const mainAuthor  = document.getElementById('main-author');
 const mainButton  = document.getElementById('random-quote');
+const twitterBtn = document.getElementById('twitter');
 
 let apiQuote = [];
 
@@ -30,8 +31,20 @@ mainButton.addEventListener('click', newQuote);
 
 getQuote();
 
+
+//Function to copy Quote text
 function copyText() {
     const text = document.getElementById("main").textContent;
     navigator.clipboard.writeText(text);
     alert("Copied the text: " + text);
   }
+
+  // Function to post Quote to Twitter
+  function twitterQuote() {
+    const quote = mainText.innerText;
+    const author = mainAuthor.innerText;
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
+    window.open(twitterUrl, '_blank');
+  }
+
+  twitterBtn.addEventListener('click', twitterQuote);

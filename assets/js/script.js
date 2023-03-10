@@ -6,7 +6,8 @@ const twitterBtn = document.getElementById('twitter');
 
 let apiQuote = [];
 
-// Generate random quote
+// This code fetches a list of quotes from an external API, selects a random quote from the list, and displays the selected quote's author and text on a webpage using two functions, getQuote() and newQuote().
+
 function newQuote() {
     const quote = apiQuote[Math.floor(Math.random() * apiQuote.length)];
     mainAuthor.textContent = quote.author;
@@ -32,14 +33,14 @@ mainButton.addEventListener('click', newQuote);
 getQuote();
 
 
-//Function to copy Quote text
+// This function copies the text content of an HTML element to the user's clipboard and displays an alert message indicating that the text has been copied.
 function copyText() {
     const text = document.getElementById("main").textContent;
     navigator.clipboard.writeText(text);
     alert("Copied the text: " + text);
   }
 
-  // Function to post Quote to Twitter
+  // The function constructs a URL for sharing a quote and author on Twitter using template literals and opens a new window to the Twitter share URL.
   function twitterQuote() {
     const quote = mainText.innerText;
     const author = mainAuthor.innerText;

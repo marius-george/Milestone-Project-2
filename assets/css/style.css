@@ -45,6 +45,8 @@ p {
   text-align: left;
 }
 
+
+
 .main-div {
     width: auto;
     max-width: 1000px;
@@ -57,8 +59,9 @@ p {
 
 
 .main-text {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
+
 
 .main-author {
     font-style: italic;

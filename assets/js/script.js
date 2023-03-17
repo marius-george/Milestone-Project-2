@@ -1,7 +1,7 @@
-const mainDiv  = document.getElementById('main-div');
-const mainText  = document.getElementById('main');
-const mainAuthor  = document.getElementById('main-author');
-const mainButton  = document.getElementById('random-quote');
+const mainDiv = document.getElementById('main-div');
+const mainText = document.getElementById('main');
+const mainAuthor = document.getElementById('main-author');
+const mainButton = document.getElementById('random-quote');
 const twitterBtn = document.getElementById('twitter');
 
 let apiQuote = [];
@@ -20,9 +20,8 @@ async function getQuote() {
         let response = await fetch(apiUrl);
         apiQuote = await response.json();
         newQuote();
-    }
-    catch (error) {
-
+    } catch (error) {
+        alert("Oops! Please refresh the page!");
     }
 }
 
@@ -38,14 +37,14 @@ function copyText() {
     const text = document.getElementById("main").textContent;
     navigator.clipboard.writeText(text);
     alert("Copied the text: " + text);
-  }
+}
 
-  // The function constructs a URL for sharing a quote and author on Twitter using template literals and opens a new window to the Twitter share URL.
-  function twitterQuote() {
+// The function constructs a URL for sharing a quote and author on Twitter using template literals and opens a new window to the Twitter share URL.
+function twitterQuote() {
     const quote = mainText.innerText;
     const author = mainAuthor.innerText;
     const twitterUrl = `https://twitter.com/intent/tweet?text=${quote} - ${author}`;
     window.open(twitterUrl, '_blank');
-  }
+}
 
-  twitterBtn.addEventListener('click', twitterQuote);
+twitterBtn.addEventListener('click', twitterQuote);

@@ -4,7 +4,7 @@
 
 This is a small website dedicated to quotes. Its purpose is to provide the user with a brief history of quotes and to present some stories in which quotes have had an impact on people. The main feature is to generate random quotes, copy them to the clipboard, and post them on Twitter with just two clicks.
 
-![Website Mockup](./assets/img/mockup.jpg)
+![Website Mockup](./assets/img/mockup.JPG)
 
 ## User Experience (UX)
 
@@ -40,9 +40,11 @@ This is a small website dedicated to quotes. Its purpose is to provide the user 
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://ibb.co/hRnz0wC)
+    -   Home Page Wireframe - [View](https://ibb.co/wJJCz1m)
 
-    -   Mobile Wireframe - [View](https://ibb.co/QDxVNwb)
+    -   Mobile Wireframe - [View](https://ibb.co/NC8SGYd)
+
+    -   Quote Generator Wireframe - [View](https://ibb.co/PQr0XtK)
 
     
 
@@ -107,12 +109,12 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Further Testing
 
 -   The Website was tested on Google Chrome, Mozilla Firefox, Microsoft Edge and Safari browsers.
--   The website was viewed on a variety of devices such as Desktop, Laptop, iPad, Samsung Galaxy TAB, iPhone 13 and Huawei P30 Pro.
+-   The website was viewed on a variety of devices such as Desktop, Laptop, iPad, Samsung Galaxy TAB, iPhone 13 and Samsung Galaxy S22.
 
 ### Bugs
 
-- When the website is displayed in mobile viewport the copy quote button does not have top padding.
-- 
+- When the website is displayed in mobile viewport the copy quote button does not have top padding in inspire page.
+-
 
 
 ## Deployment
@@ -173,9 +175,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## Credits
 
-- https://www.shutterstock.com - For providing the images for the carousel.
-- https://www.annabelkarmel.com - For providing the pictures of the recipes.
-- https://www.freelogocreator.com - Helped me with the logo of the team.
+- 
 
 
 ### Content
